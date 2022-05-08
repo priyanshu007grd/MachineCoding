@@ -11,6 +11,7 @@
     <modules>
         <module>SnakeLadder</module>
         <module>SplitWise</module>
+        <module>Elevator</module>
     </modules>
 
     <properties>
