@@ -11,6 +11,7 @@
         <module name="SplitWise" />
         <module name="ParkingLot" />
         <module name="Elevator" />
+        <module name="Cache" />
       </profile>
     </annotationProcessing>
   </component>
