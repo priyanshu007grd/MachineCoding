@@ -8,8 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SnakeLadder" />
-        <module name="Elevator" />
         <module name="SplitWise" />
+        <module name="ParkingLot" />
+        <module name="Elevator" />
       </profile>
     </annotationProcessing>
   </component>
