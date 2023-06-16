@@ -1,4 +1,4 @@
-package Model;
+package ParkingStrategy;
 
 import lombok.Data;
 

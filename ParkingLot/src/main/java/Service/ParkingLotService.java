@@ -1,9 +1,11 @@
 package Service;
 
 import Model.*;
+import ParkingStrategy.IParkingStrategy;
+import ParkingStrategy.ParkingStrategy;
+import Storage.ParkingLot;
 
 import java.util.*;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class ParkingLotService {
@@ -14,6 +16,7 @@ public class ParkingLotService {
     public ParkingLotService() {
     }
 
+    //not in use
     public ParkingLotService(ParkingLot parkingLot, IParkingStrategy parkingStrategy) {
         this.parkingLot = parkingLot;
         this.parkingStrategy = parkingStrategy;
@@ -28,10 +31,8 @@ public class ParkingLotService {
     }
 
     public void createParkingLotService(Integer capacity) {
-//        this.parkingLot = parkingLot;
-//        this.parkingStrategy = parkingStrategy;
 
-        this.parkingLot = parkingLot = ParkingLot.builder().capacity(capacity).slotM(new HashMap<>()).build();
+        this.parkingLot = ParkingLot.builder().capacity(capacity).slotM(new HashMap<>()).build();
         this.parkingStrategy = new ParkingStrategy();
 
         IntStream.rangeClosed(1, parkingLot.getCapacity()).forEach(slotNbr->{

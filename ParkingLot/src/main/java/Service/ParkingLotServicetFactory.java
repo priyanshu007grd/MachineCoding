@@ -1,9 +1,8 @@
 package Service;
 
-import Model.IParkingStrategy;
-import Model.ParkingLot;
-import Model.ParkingStrategy;
-import Service.ParkingLotService;
+import ParkingStrategy.IParkingStrategy;
+import Storage.ParkingLot;
+import ParkingStrategy.ParkingStrategy;
 
 import java.util.HashMap;
 
