@@ -1,3 +1,7 @@
+import Model.Ladder;
+import Model.Player;
+import Model.Snake;
+
 import java.util.*;
 
 public class GameFactory {
@@ -13,7 +17,7 @@ public class GameFactory {
         Queue<Player> playerQ = getPlayerQueue();
         Map<Player,Integer> playerM = new HashMap<>();
         Map<Integer,Snake> snakeM = getSnakeMap(boardSize);
-        Map<Integer,Ladder> ladderM = getLadderMap(boardSize);
+        Map<Integer, Ladder> ladderM = getLadderMap(boardSize);
 
         return Game.builder()
                 .boardSize(boardSize)
@@ -40,7 +44,7 @@ public class GameFactory {
         return playerQ;
     }
 
-    private static Map<Integer,Snake> getSnakeMap(Integer boardSize) {
+    private static Map<Integer, Snake> getSnakeMap(Integer boardSize) {
         Map<Integer,Snake> snakeM = new HashMap<>();
         System.out.println("Enter number of snakes");
         int numSnakes = scanner.nextInt();
@@ -53,7 +57,7 @@ public class GameFactory {
                     continue;
                 if (!snakeM.containsKey(snakeHead)) {
                     Snake snake = new Snake(snakeHead, snakeTail);
-                    snakeM.put(snake.head,snake);
+                    snakeM.put(snake.getHead(),snake);
                     break;
                 }
             }

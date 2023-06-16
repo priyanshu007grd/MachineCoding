@@ -1,10 +1,16 @@
+package Model;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Player {
-    String Name;
+@Getter
+public class Snake {
+
+    Integer head;
+    Integer tail;
 }

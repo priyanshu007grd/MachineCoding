@@ -1,3 +1,6 @@
+import Model.Ladder;
+import Model.Player;
+import Model.Snake;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
@@ -13,7 +16,7 @@ public class Game {
     Queue<Player> playerQ;
     Map<Player,Integer> playerM;
     Map<Integer,Snake> snakeM;
-    Map<Integer,Ladder> ladderM;
+    Map<Integer, Ladder> ladderM;
     Dice dice;
 
 
@@ -25,7 +28,7 @@ public class Game {
 
             playerM.put(player,newPosition);
             if (newPosition == boardSize) {
-                System.out.println("Player " + player.getName() + " Won.");
+                System.out.println("Model.Player " + player.getName() + " Won.");
             } else {
                 System.out.println("Setting " + player.getName() + "'s new position to " + playerM.get(player));
                 playerQ.add(player);
@@ -41,7 +44,7 @@ public class Game {
         Integer newPos = startPos + dice;
 
         if (snakeM.containsKey(newPos)) {
-            System.out.println("Snake Bit");
+            System.out.println("Model.Snake Bit");
             Snake snake = snakeM.get(newPos);
             return snake.getTail();
         }

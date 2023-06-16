@@ -1,3 +1,5 @@
+package Model;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -5,8 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Snake {
-
-    Integer head;
-    Integer tail;
+public class Ladder {
+    Integer start;
+    Integer end;
 }
