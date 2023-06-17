@@ -17,6 +17,7 @@
         <module>ToDoTask</module>
         <module>Calender</module>
         <module>CalenderApp</module>
+        <module>PendencySystem</module>
     </modules>
 
     <dependencies>
