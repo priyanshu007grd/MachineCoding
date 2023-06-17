@@ -1,2 +1,0 @@
-create_parking_lot 10
-park 1 red
