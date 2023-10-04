@@ -7,11 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="VendingMachine" />
+        <module name="TicTakToe" />
         <module name="SplitWise" />
         <module name="ParkingLot" />
         <module name="Elevator" />
         <module name="ToDoTask" />
         <module name="SnakeLadder" />
+        <module name="EventHandler" />
         <module name="CalenderApp" />
         <module name="PendencySystem" />
         <module name="Cache" />

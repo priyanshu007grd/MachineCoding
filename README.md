@@ -6,4 +6,5 @@ Some Best Machine Coding
     - ParkingLot
     - SnakeLadder
     - SplitWise
+    - Vending machine
 

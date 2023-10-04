@@ -18,6 +18,9 @@
         <module>Calender</module>
         <module>CalenderApp</module>
         <module>PendencySystem</module>
+        <module>VendingMachine</module>
+        <module>TicTakToe</module>
+        <module>EventHandler</module>
     </modules>
 
     <dependencies>
