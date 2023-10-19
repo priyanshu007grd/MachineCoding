@@ -11,7 +11,7 @@ public class Cache<Key,Value> {
 
     public Cache(Integer capacity) {
         this.storage = new HashMapStorage<Key, Value>(capacity);
-        this.evictionPolicy = new LRUEvictionPolicy<Key>();
+        this.evictionPolicy = new LRUEvictionPolicyLinkedHashMap<Key>();
     }
 
     public Value get(Key key) {
